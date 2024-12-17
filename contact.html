@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+   
+  <header class="header">
+    <div><a href="home.html" id="logo">聞義腹欣</a></div>
+    <nav>
+        <div class="humbuger" id="menu-hum">
+            <ion-icon name="reorder-three-outline" class="iconhum"></ion-icon>
+        </div>
+        <ul class="nav-menu" id="menu">
+            <li><a href = "new.html">NEWS</a></li>
+            <li><a href = "menu.html">MENU</a></li>
+            <li><a href = "contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+</header>
+  
+<div>
+  <h2 class="h22">
+    <img src="tes.jpg"> 
+    <label>CONTACT US</label>
+  </h2>
+</div>
+
+<div class="container">
+  <div class="contacts">
+    <section class="test">
+        <form class="row g-3 needs-validation" novalidate>
+        <div class="input-group">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" required>
+              
+            <input type="text" aria-label="Last name" class="form-control" required>
+          </div>
+          
+
+
+          <div class="form-check">
+            <input type="radio" name="radio-stacked" value="boy" required>
+            <label for="contactCoice1">男</label>
+            <input type="radio" name="radio-stacked" value="gril" required>
+            <label for="contactCoice2">女</label>
+            <div class="invalid-feedback">please select your gender</div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email </label>
+            <div class="invalid-feedback">
+                Please enter a message in the Email.
+              </div>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control " id="floatingPassword" placeholder="Password" required>
+            <label for="floatingPassword">Phone</label>
+            <div class="invalid-feedback">
+                Please enter a message in the Phone.
+              </div>
+          </div>
+          
+            <div class="mb-3 " >
+              <label for="validationTextarea" class="form-label">Textarea</label>
+              <textarea class="form-control" id="validationTextarea" rows="10"  required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+            <div class="more-news col-12">
+                <button  type="submit"><span>SubMit</span></button>
+            </div>
+    </section>
+
+    <div class="test2">
+      <h3>聯絡資訊</h3>
+      <div class="info-item"><p></p><ion-icon name="logo-facebook" class="icon"></ion-icon>聞義腹欣</p></div>
+      <div class="info-item"><p><ion-icon name="call" class="icon"></ion-icon>0925-123-456</p></div>
+      <div class="info-item"><p><ion-icon name="mail" class="icon"></ion-icon>skweq@gmail.com</p></div>
+      <div class="info-item"><p><ion-icon name="home" class="icon"></ion-icon>台中市XX區XX鎮123號</p></div>
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="floor">
+  <div class= "fb">
+      <div>
+          <a href="#">
+          <ion-icon name="logo-facebook" class="icon"></ion-icon>
+          </a>
+      </div>
+      <div class="info-item">
+          <ion-icon name="call-sharp"class="icon"></ion-icon>
+          <span>0925-123-456</span>
+      </div>
+      <div class="info-item"><ion-icon name="mail" class="icon"></ion-icon>
+        <span>skweq@gmail.com</span>
+      </div>
+      <div class="info-item"><ion-icon name="home" class="icon"></ion-icon>
+        <span>台中市XX區XX鎮123號</span>
+      </div>
+      
+  </div>
+  
+
+  <p>網站訓練用</p>
+</footer>
+
+<script>
+
+(() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+          alert("您有欄位空缺，因此提交失敗")
+        }
+        
+        form.classList.add('was-validated')
+      }, false)
+      
+    })
+  })()
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
